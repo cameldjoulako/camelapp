@@ -1,5 +1,10 @@
 <?php
 
+use Router\Router;
+
 require '../vendor/autoload.php';
 
-echo $_GET['url'];
+//Recuperation de l'url pour traitement
+$url = $_GET['url'];
+$router = new Router($url);
+$router->show();

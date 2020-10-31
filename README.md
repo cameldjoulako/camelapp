@@ -1,3 +1,3 @@
 # CamelApp
 
-An PHP OOP Blog Application that permit to add an article and apply all concep of OOP using PHP programmin language.
+An PHP OOP Blog Application that permit to Manage articles and apply all concept of OOP using PHP programming language.
