@@ -1,0 +1,14 @@
+# On active les réécritures pour les rédirections souhaités
+
+RewriteEngine On
+
+# précondition: cas de fichier non ateignable: on fait la réécritures 
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Regle d'écriture des URL : fichier inexistant (on ecrit notre regle via une expression reguliere)
+# on renvoi tout en tant que parametre d'URL vers index dans public
+# le drapeau QSA nous permet d'enchainer les parametres,
+# le drapeau L precise que c'est la derniere URL atteinte
+
+RewriteRule ^(.*)$ public/index.php?url=$1 [QSA,L]

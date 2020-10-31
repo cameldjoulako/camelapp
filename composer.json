@@ -1,0 +1,16 @@
+{
+    "name": "camel/camelapp",
+    "description": "OOP PHP Blog",
+    "authors": [
+        {
+            "name": "Camel Djoulako",
+            "email": "cameldjoulako17@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Router\\": "routes/"
+        }
+    },
+    "require": {}
+}
